@@ -1,0 +1,50 @@
+@use "../../sass/" as *;
+
+.btn {
+  padding: 16px 20px;
+  border-radius: 30px;
+  color: $white;
+  background-color: transparent;
+  border: 2px solid $main-color;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+  &__icon {
+    @include flex(center, center);
+    width: 4.2em;
+    height: 4.2em;
+    border-radius: 50%;
+    background-color: $main-color;
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
+    .icon {
+      transform: scale(2);
+    }
+  }
+  &__children {
+    padding-left: 45px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    z-index: 9;
+    position: relative;
+    transition: padding-right 0.3s ease, padding-left 0.3s ease;
+  }
+
+  &:hover {
+    .btn__icon {
+      width: 101%;
+      height: 4.2em;
+      border-radius: 200px;
+      justify-content: flex-end;
+      padding-right: 20px;
+    }
+    .btn__children {
+      padding-left: 0px;
+      padding-right: 45px;
+    }
+  }
+}

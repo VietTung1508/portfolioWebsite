@@ -1,0 +1,72 @@
+@use "../../sass/" as *;
+
+.block {
+  background-color: $main-color;
+  position: fixed;
+  height: 200%;
+  width: 100%;
+  transform: rotate(-15deg);
+  left: -86%;
+  top: -50%;
+  z-index: -999;
+}
+
+.biography {
+  width: 100%;
+  overflow-y: hidden;
+  &__content {
+    @include flex(center, center);
+    &__imgWrap {
+      flex: 1;
+      margin-top: 40px;
+      margin-left: 40px;
+
+      &__img {
+        background-image: url("https://miro.medium.com/max/720/1*rRbR6_HCjALPJo1kA8PQ9g.jpeg");
+        height: calc(100vh - 80px);
+        border-radius: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 7px rgb(0 0 0 / 90%);
+      }
+    }
+    &__infoWrap {
+      flex: 2;
+      padding-left: 60px;
+      &__info {
+        h1 {
+          font-size: 45px;
+          line-height: 70px;
+          color: $main-color;
+          font-weight: 700;
+          position: relative;
+          padding-left: 50px;
+          margin-bottom: 1rem;
+
+          &::before {
+            content: "";
+            width: 40px;
+            height: 5px;
+            top: 32px;
+            left: 0;
+            background-color: $main-color;
+            position: absolute;
+          }
+          span {
+            color: $white;
+            display: block;
+          }
+        }
+        p {
+          color: $white;
+          line-height: 2.5rem;
+          padding-right: 9rem;
+          font-size: 1.2rem;
+          margin-bottom: 1.5rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
