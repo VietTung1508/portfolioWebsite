@@ -4,16 +4,20 @@
   position: fixed;
   right: 30px;
   top: 50%;
-  z-index: 99;
   transform: translateY(-50%);
+  z-index: 999;
   &__items {
+    @include tablet {
+      @include flex(space-around, center);
+    }
     &__item {
       background-color: #2b2a2a;
       border-radius: 50%;
       @include flex(center, center);
       margin: 24px 0;
-      position: relative;
       padding: 20px 18px;
+      position: relative;
+      transition: background-color 0.5s ease-out;
 
       .header-title {
         font-size: 1.2rem;
@@ -24,6 +28,9 @@
         border-radius: 30px;
         opacity: 0;
         transition: padding-right 0.5s ease, opacity 0.5s ease;
+        @include tablet {
+          display: none;
+        }
       }
 
       .header-icon {
@@ -43,6 +50,27 @@
       &.active {
         background-color: $main-color;
       }
+
+      @include tablet {
+        margin: 0px;
+        background-color: #444444;
+
+        &:hover {
+          background-color: $main-color;
+        }
+      }
     }
+  }
+  @include tablet {
+    bottom: 0;
+    left: 0;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    display: block;
+    background: #2b2a2a;
+    padding: 8px;
+    z-index: 10;
   }
 }

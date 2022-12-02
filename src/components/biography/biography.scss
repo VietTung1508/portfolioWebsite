@@ -9,6 +9,9 @@
   left: -86%;
   top: -50%;
   z-index: -999;
+  @include tablet {
+    display: none;
+  }
 }
 
 .biography {
@@ -16,6 +19,10 @@
   overflow-y: hidden;
   &__content {
     @include flex(center, center);
+    @include tablet {
+      flex-direction: column;
+      padding-bottom: 8rem;
+    }
     &__imgWrap {
       flex: 1;
       margin-top: 40px;
@@ -29,6 +36,9 @@
         background-repeat: no-repeat;
         background-size: cover;
         box-shadow: 0 0 7px rgb(0 0 0 / 90%);
+      }
+      @include tablet {
+        display: none;
       }
     }
     &__infoWrap {

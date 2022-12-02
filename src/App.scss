@@ -1,5 +1,5 @@
 @use "./sass/" as *;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;700;900&display=swap");
 
 * {
   padding: 0;
@@ -14,6 +14,18 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  font-size: 100%;
+
+  @include tablet {
+    font-size: 70%;
+  }
+
+  @include mobile {
+    font-size: 50%;
+  }
+}
+
 a,
 li,
 ul {
@@ -23,13 +35,30 @@ ul {
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #333;
 }
 ::-webkit-scrollbar-thumb {
-  background: $main-color;
-  border-radius: 10px;
+  background-color: #555;
+  border-radius: 20px;
+  border: 3px solid #333;
+}
+
+.container {
+  margin: auto;
+  max-width: 1620px;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #000;
+  opacity: 0.5;
 }

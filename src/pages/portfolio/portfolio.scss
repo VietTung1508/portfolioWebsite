@@ -1,0 +1,106 @@
+@use "../../sass/" as *;
+
+.portfolio {
+  width: 100%;
+  .sorts {
+    @include flex(center, center);
+
+    .sort {
+      margin: 0 0 32px 16px;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 10px 14px;
+      background-color: #2b2a2a;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      &.active {
+        background-color: $main-color;
+      }
+      &:hover {
+        background-color: $main-color;
+      }
+      @include tablet {
+        width: 45%;
+        @include flex(center, center);
+        padding: 15px;
+        margin: 0 10px 18px 10px;
+      }
+      @include mobile {
+        width: 40%;
+      }
+    }
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 2rem;
+    padding-bottom: 8rem;
+    &__card {
+      width: calc(33.33333% - 20px);
+      position: relative;
+      cursor: pointer;
+
+      div {
+        padding-top: 58%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.5s ease;
+        border-radius: 4px;
+      }
+
+      h3 {
+        position: absolute;
+        color: #fff;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        font-size: 30px;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      @include tablet {
+        width: calc(50% - 15px);
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+
+      &:hover {
+        div {
+          opacity: 0.5;
+        }
+
+        h3 {
+          transform: translate(-50%, -50%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .noProjects {
+    img {
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h2 {
+      color: $white;
+      text-align: center;
+      letter-spacing: 2px;
+      padding: 1.5rem 0;
+    }
+  }
+}

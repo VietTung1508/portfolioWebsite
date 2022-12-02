@@ -31,7 +31,7 @@ function Biography() {
                 theo đuổi ngành học khó nhằn này !!!
               </p>
               <div className="btns">
-                <Button path="/about" icon={faArrowRight}>
+                <Button path="/aboutMe" icon={faArrowRight}>
                   About Me
                 </Button>
                 <Button path="/portfolio" icon={faArrowRight}>
