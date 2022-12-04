@@ -16,6 +16,10 @@
     .subTitle {
       color: $main-color;
     }
+
+    @include tablet {
+      text-align: start;
+    }
   }
   .title-bg {
     font-size: 120px;
@@ -28,5 +32,8 @@
     text-transform: uppercase;
     letter-spacing: 10px;
     line-height: 0.7;
+    @include tablet {
+      font-size: 50px;
+    }
   }
 }

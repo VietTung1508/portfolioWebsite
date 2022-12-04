@@ -1,15 +1,31 @@
 @use "../../sass/" as *;
 
+.modal-overlay {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  visibility: hidden;
+
+  &.active {
+    visibility: visible;
+  }
+}
+
 .modal {
   position: fixed;
+  z-index: 200;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -70%);
   max-width: 1200px;
   width: 100%;
+  min-height: 500px;
   background-color: #2b2a2a;
   border-radius: 10px;
-  z-index: 9;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, transform 0.6s ease;
@@ -96,7 +112,8 @@
           transition: opacity 0.5s ease;
 
           &.active,
-          &:hover {
+          &:hover,
+          &:active {
             opacity: 1;
           }
         }

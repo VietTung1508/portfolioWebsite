@@ -52,13 +52,7 @@ ul {
   max-width: 1620px;
 }
 
-.overlay {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-
-  background-color: #000;
-  opacity: 0.5;
+.section {
+  padding: 0 3rem;
+  position: relative;
 }

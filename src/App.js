@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Header from "./components/header/Header";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
       data-aos-delay="0"
     >
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routess />
       </BrowserRouter>

@@ -4,7 +4,7 @@ import noProject from "../../assets/nopj.png";
 
 import { works } from "../../data";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import Modal from "../../components/modal/Modal";
 
 function Portfolio() {
@@ -32,7 +32,9 @@ function Portfolio() {
 
   const handleCard = (el) => {
     const modal = document.querySelector(`#modal_${el.id}`);
+    const overlay = document.querySelector(`#overlay_modal_${el.id}`);
     modal.classList.toggle("active");
+    overlay.classList.toggle("active");
   };
 
   return (
@@ -73,7 +75,7 @@ function Portfolio() {
                 className="portfolio__cards__card"
                 data-aos="fade-right"
                 data-aos-duration="1200"
-                data-aos-delay={i * 50}
+                data-aos-delay={i < 2 ? i * 100 : i * 0}
                 onClick={() => handleCard(el)}
               >
                 <div style={{ backgroundImage: `url(${el.img[0]})` }} />

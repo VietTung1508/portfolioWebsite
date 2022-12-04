@@ -18,6 +18,16 @@ import tmovix2 from "../assets/tmovix2.png";
 import tmovix3 from "../assets/tmovix3.png";
 import tmovix4 from "../assets/tmovix4.png";
 import tmovix5 from "../assets/tmovix5.png";
+import html from "../assets/html.png";
+import sass from "../assets/sass.png";
+import redux from "../assets/redux.png";
+import react from "../assets/react.png";
+import css from "../assets/css.png";
+import js from "../assets/js.png";
+import git from "../assets/git.png";
+import axios from "../assets/axios.png";
+import github from "../assets/github.png";
+import responsive from "../assets/responsive.png";
 
 export const works = [
   {
@@ -42,7 +52,7 @@ export const works = [
     type: "Lofi Chill",
     frontEnd: "React, SCSS",
     backEnd: "None",
-    tags: ["react", "scss", "lofi", "music"],
+    tags: ["react", "redux", "scss", "lofi", "music"],
     linkSrcCode: "https://github.com/VietTung1508/lofiwebsite",
     link: "https://viettunglofi.netlify.app/",
   },
@@ -64,7 +74,7 @@ export const works = [
     type: "Ecommerce",
     frontEnd: "React ,SCSS",
     backEnd: "None",
-    tags: ["react", "scss", "ecommerce", "responsive", "fashion"],
+    tags: ["react", "redux", "scss", "ecommerce", "responsive", "fashion"],
     linkSrcCode: "https://github.com/VietTung1508/haruki-ecomerce-website",
     link: "https://harukijp.netlify.app/",
   },
@@ -80,5 +90,58 @@ export const works = [
     tags: ["react", "scss", "portfolio", "responsive"],
     linkSrcCode: "https://github.com/VietTung1508/lofiwebsite",
     link: "https://harukijp.netlify.app/",
+  },
+];
+
+export const skills = [
+  {
+    id: 1,
+    img: html,
+    name: "html",
+  },
+  {
+    id: 2,
+    img: css,
+    name: "css",
+  },
+  {
+    id: 3,
+    img: js,
+    name: "javascript",
+  },
+  {
+    id: 4,
+    img: sass,
+    name: "sass",
+  },
+  {
+    id: 5,
+    img: react,
+    name: "react",
+  },
+  {
+    id: 6,
+    img: redux,
+    name: "redux",
+  },
+  {
+    id: 7,
+    img: axios,
+    name: "axios",
+  },
+  {
+    id: 8,
+    img: github,
+    name: "git hub",
+  },
+  {
+    id: 8,
+    img: git,
+    name: "git",
+  },
+  {
+    id: 8,
+    img: responsive,
+    name: "responsive Website",
   },
 ];

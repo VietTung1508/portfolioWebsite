@@ -31,17 +31,7 @@ function PageHeader() {
       <h1 className="title">
         {title} <span className="subTitle">{subTitle}</span>
       </h1>
-      <span
-        className={`title-bg ${
-          pathname === "/aboutMe"
-            ? "resume"
-            : pathname === "/contact"
-            ? "contact"
-            : "work"
-        }`}
-      >
-        {behindTitle}
-      </span>
+      <span className="title-bg">{behindTitle}</span>
     </div>
   );
 }

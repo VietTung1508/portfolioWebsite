@@ -1,0 +1,244 @@
+@use "../../sass/" as *;
+
+.aboutMe {
+  &__content {
+    @include flex(space-between, flex-start);
+    @include tablet {
+      flex-direction: column;
+    }
+    &__personalInfo {
+      flex: 1;
+      .title {
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+
+      .info-list {
+        @include flex(space-between, center);
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        li {
+          font-family: "Open Sans", sans-serif;
+          width: 50%;
+          font-size: 17px;
+          margin-bottom: 30px;
+          color: rgba(255, 255, 255, 0.8);
+          span {
+            color: $white;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    &__experience {
+      flex: 1;
+      .exp-boxs {
+        @include flex(center, center);
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .exp-box {
+          width: calc(50% - 3rem);
+          padding: 25px 35px 40px 45px;
+          border: 1px solid #252525;
+          h3 {
+            color: $main-color;
+            font-size: 50px;
+            position: relative;
+            display: inline;
+            &:before {
+              content: "+";
+              position: absolute;
+              right: -24px;
+              font-size: 33px;
+              font-weight: 300;
+              top: 2px;
+            }
+          }
+          p {
+            color: $white;
+            font-size: 16px;
+            padding: 0 0px 0 45px;
+            position: relative;
+            text-transform: uppercase;
+            font-family: "Open Sans", sans-serif;
+            span {
+              display: block;
+            }
+
+            &::before {
+              content: "";
+              position: absolute;
+              width: 30px;
+              height: 1px;
+              background-color: #777;
+              top: 18px;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .seperator {
+    border-top: 1px solid #252525;
+    margin: 70px auto 55px;
+    max-width: 40%;
+  }
+
+  hr {
+    background-color: #252525;
+    color: inherit;
+    margin: 1rem 0;
+    opacity: 0.25;
+    border: 0;
+  }
+
+  &__skill {
+    .title {
+      text-align: center;
+      color: $white;
+      font-size: 28px;
+      padding: 0 0 46px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .skill-list {
+      @include flex(flex-start, center);
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .skill-item {
+        width: calc(25% - 22.5px);
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+        @include tablet {
+          width: calc(33.33333% - 22.5px);
+        }
+        @include mobile {
+          width: calc(50% - 22.5px);
+        }
+        &__imgWrap {
+          background-color: #2b2a2a;
+          width: 130px;
+          height: 130px;
+          @include flex(center, center);
+          border-radius: 50%;
+          transition: all 0.5s ease;
+          cursor: pointer;
+
+          &__img {
+            height: 60%;
+            width: 60%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+        &__name {
+          h6 {
+            font-size: 18px;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  &__education {
+    .title {
+      text-align: center;
+      color: $white;
+      font-size: 28px;
+      padding: 0 0 46px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+    &__content {
+      @include flex(space-between, flex-start);
+      gap: 30px;
+
+      @include tablet {
+        flex-direction: column;
+      }
+      &__left,
+      &__right {
+        flex: 1;
+        .content {
+          color: $white;
+          margin: 0 0 50px;
+          padding: 0 20px 0 60px;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 1px;
+            background-color: #333;
+            top: 0;
+            left: 22px;
+            z-index: 1;
+          }
+
+          &__icon {
+            background-color: $main-color;
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            @include flex(center, center);
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            .i {
+              transform: scale(1.2);
+            }
+          }
+
+          &__date {
+            background-color: #2b2a2a;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+            border-radius: 10px;
+          }
+          &__title {
+            span {
+              padding-left: 30px;
+              position: relative;
+              opacity: 0.5;
+              text-transform: uppercase;
+              &:before {
+                content: "";
+                position: absolute;
+                width: 15px;
+                height: 2px;
+                top: 18px;
+                left: 5px;
+                background-color: $white;
+                opacity: 0.8;
+              }
+            }
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      &__right {
+        flex: 1;
+      }
+    }
+  }
+}
