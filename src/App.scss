@@ -1,5 +1,6 @@
 @use "./sass/" as *;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;700;900&display=swap");
 
 * {
   padding: 0;
@@ -12,18 +13,6 @@ body {
   background-color: $body-bg;
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
-
-html {
-  font-size: 100%;
-
-  @include tablet {
-    font-size: 70%;
-  }
-
-  @include mobile {
-    font-size: 50%;
-  }
 }
 
 a,
@@ -55,4 +44,7 @@ ul {
 .section {
   padding: 0 3rem;
   position: relative;
+  @include mobile {
+    padding: 3.75rem 1rem;
+  }
 }

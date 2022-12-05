@@ -44,7 +44,7 @@ const infoList = [
   },
   {
     title: "Email",
-    content: "Viettung150803@gmail.com",
+    content: "viettung150803@gmail.com",
   },
 ];
 

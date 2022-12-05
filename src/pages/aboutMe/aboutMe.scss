@@ -24,14 +24,21 @@
           font-size: 17px;
           margin-bottom: 30px;
           color: rgba(255, 255, 255, 0.8);
+          @include mobile {
+            font-size: 13px;
+          }
           span {
             color: $white;
             font-weight: 500;
+            @include mobile {
+              display: block;
+            }
           }
         }
       }
     }
     &__experience {
+      width: 100%;
       flex: 1;
       .exp-boxs {
         @include flex(center, center);
@@ -41,6 +48,12 @@
         .exp-box {
           width: calc(50% - 3rem);
           padding: 25px 35px 40px 45px;
+          @include tablet {
+            padding: 20px 30px 25px 40px;
+          }
+          @include mobile {
+            padding: 15px 20px 20px 25px;
+          }
           border: 1px solid #252525;
           h3 {
             color: $main-color;
@@ -55,6 +68,9 @@
               font-weight: 300;
               top: 2px;
             }
+            @include tablet {
+              font-size: 40px;
+            }
           }
           p {
             color: $white;
@@ -63,6 +79,10 @@
             position: relative;
             text-transform: uppercase;
             font-family: "Open Sans", sans-serif;
+            @include tablet {
+              padding: 0;
+              font-size: 15px;
+            }
             span {
               display: block;
             }
@@ -75,6 +95,9 @@
               background-color: #777;
               top: 18px;
               left: 0;
+              @include tablet {
+                display: none;
+              }
             }
           }
         }
@@ -122,7 +145,7 @@
           width: calc(33.33333% - 22.5px);
         }
         @include mobile {
-          width: calc(50% - 22.5px);
+          width: calc(50% - 15px);
         }
         &__imgWrap {
           background-color: #2b2a2a;
@@ -157,6 +180,14 @@
   }
 
   &__education {
+    @include tablet {
+      padding-bottom: 3rem;
+    }
+
+    @include mobile {
+      padding-bottom: 0;
+    }
+
     .title {
       text-align: center;
       color: $white;
@@ -220,12 +251,13 @@
               position: relative;
               opacity: 0.5;
               text-transform: uppercase;
+              font-size: 20px;
               &:before {
                 content: "";
                 position: absolute;
                 width: 15px;
                 height: 2px;
-                top: 18px;
+                top: 13px;
                 left: 5px;
                 background-color: $white;
                 opacity: 0.8;

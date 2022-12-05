@@ -40,7 +40,7 @@ function Portfolio() {
   return (
     <div>
       <PageHeader />
-      <div className="portfolio container">
+      <div className="portfolio container section">
         <ul className="sorts" data-aos="fade-up" data-aos-duration="1200">
           <li
             className={`sort ${sort === "js" ? "active" : ""}`}

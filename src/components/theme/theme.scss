@@ -1,0 +1,24 @@
+@use "../../sass/" as *;
+
+.theme {
+  width: 55px;
+  height: 55px;
+  background-color: #2b2a2a;
+  border-radius: 50%;
+  @include flex(center, center);
+  position: fixed;
+  top: 2%;
+  right: 1%;
+  border-radius: 50%;
+  z-index: 999;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  .icon {
+    color: $white;
+    font-size: 25px;
+  }
+
+  &:hover {
+    background-color: $main-color;
+  }
+}

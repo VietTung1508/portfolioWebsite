@@ -18,6 +18,11 @@ import tmovix2 from "../assets/tmovix2.png";
 import tmovix3 from "../assets/tmovix3.png";
 import tmovix4 from "../assets/tmovix4.png";
 import tmovix5 from "../assets/tmovix5.png";
+import portfolio from "../assets/portfolio.png";
+import portfolio1 from "../assets/portfolio1.png";
+import portfolio2 from "../assets/portfolio2.png";
+import portfolio3 from "../assets/portfolio3.png";
+import portfolio4 from "../assets/portfolio4.png";
 import html from "../assets/html.png";
 import sass from "../assets/sass.png";
 import redux from "../assets/redux.png";
@@ -40,7 +45,6 @@ export const works = [
     frontEnd: "React ,SCSS",
     backEnd: "The Movie Database (TMDB)API",
     tags: ["react", "scss", "axios", "responsive", "api", "movie"],
-    linkSrcCode: "https://github.com/VietTung1508/tMovixApp",
     link: "https://tmovix.netlify.app/",
   },
   {
@@ -53,7 +57,6 @@ export const works = [
     frontEnd: "React, SCSS",
     backEnd: "None",
     tags: ["react", "redux", "scss", "lofi", "music"],
-    linkSrcCode: "https://github.com/VietTung1508/lofiwebsite",
     link: "https://viettunglofi.netlify.app/",
   },
   {
@@ -75,20 +78,18 @@ export const works = [
     frontEnd: "React ,SCSS",
     backEnd: "None",
     tags: ["react", "redux", "scss", "ecommerce", "responsive", "fashion"],
-    linkSrcCode: "https://github.com/VietTung1508/haruki-ecomerce-website",
     link: "https://harukijp.netlify.app/",
   },
   {
     id: 4,
-    img: [haruki],
+    img: [portfolio, portfolio1, portfolio2, portfolio3, portfolio4],
     name: "Tung's Portfolio",
     overview:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vel tempora soluta fuga veritatis! Nihil, dicta nobis labore nemo aliquid doloribus rem, omnis fuga, officia blanditiis minima possimus in maiore Quidem, corrupti. Harum magnam necessitatibus officia, quos vero recusandae alias expedita itaque aperiam doloremque autem maiores, est sapiente, obcaecati ",
+      "Đây là website portfolio của mình , mình lấy cảm hứng từ themeforest và đã clone lại website này. Website này tổng hợp những dự án, kinh nghiệm và thông tin cá nhân của mình nếu bạn muốn thuê mình. Nếu bạn có gì thắc mắc thì cứ gửi tin nhắn qua phần contact mình sẽ phản hồi lại ngay khi có thể.",
     type: "Portfolio",
     frontEnd: "SCSS ,React",
     backEnd: "None",
     tags: ["react", "scss", "portfolio", "responsive"],
-    linkSrcCode: "https://github.com/VietTung1508/lofiwebsite",
     link: "https://harukijp.netlify.app/",
   },
 ];
@@ -142,6 +143,6 @@ export const skills = [
   {
     id: 8,
     img: responsive,
-    name: "responsive Website",
+    name: "responsive",
   },
 ];

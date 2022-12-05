@@ -1,11 +1,12 @@
 import "./biography.scss";
 import Button from "../button/Button";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import avatar from "../../assets/avatar.jpg";
 
 function Biography() {
   return (
     <>
-      <div className="biography">
+      <div className="biography container ">
         <div className="block" />
         <div
           className="biography__content"
@@ -13,9 +14,17 @@ function Biography() {
           data-aos-duration="1200"
         >
           <div className="biography__content__imgWrap">
-            <div className="biography__content__imgWrap__img" />
+            <div
+              className="biography__content__imgWrap__img"
+              style={{
+                backgroundImage: `url(${avatar})`,
+              }}
+            />
           </div>
           <div className="biography__content__infoWrap">
+            <div className="mobileAvatar">
+              <img src={avatar} alt="" />
+            </div>
             <div className="biography__content__infoWrap__info">
               <h1>
                 I'M HUYNH VIET TUNG.
@@ -31,11 +40,11 @@ function Biography() {
                 theo đuổi ngành học khó nhằn này !!!
               </p>
               <div className="btns">
-                <Button path="/aboutMe" icon={faArrowRight}>
-                  About Me
-                </Button>
                 <Button path="/portfolio" icon={faArrowRight}>
-                  My Portfolio
+                  Portfolio
+                </Button>
+                <Button path="/aboutMe" icon={faArrowRight}>
+                  About
                 </Button>
               </div>
             </div>

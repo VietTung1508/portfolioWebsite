@@ -114,14 +114,7 @@ function Modal(props) {
                   </span>
                 ))}
               </h4>
-              <h4>
-                Link Source Code -{" "}
-                <span>
-                  <a target="_blank" rel="noreferrer" href={item.linkSrcCode}>
-                    {item.linkSrcCode}
-                  </a>
-                </span>
-              </h4>
+
               <h4>
                 Link Demo -{" "}
                 <span>
