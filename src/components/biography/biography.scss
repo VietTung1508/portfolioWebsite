@@ -108,7 +108,9 @@
           }
         }
         .btns {
-          @include flex(center, center);
+          @include tablet {
+            @include flex(center, center);
+          }
         }
       }
     }
