@@ -111,7 +111,11 @@ const educationList = [
 
 function AboutMe() {
   return (
-    <div>
+    <div
+      style={{
+        overflowX: "hidden",
+      }}
+    >
       <PageHeader />
       <div className="aboutMe container section">
         <div className="aboutMe__content ">

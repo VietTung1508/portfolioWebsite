@@ -31,6 +31,7 @@ function Portfolio() {
   };
 
   const handleCard = (el) => {
+    window.scrollTo(0, 140);
     const modal = document.querySelector(`#modal_${el.id}`);
     const overlay = document.querySelector(`#overlay_modal_${el.id}`);
     modal.classList.toggle("active");

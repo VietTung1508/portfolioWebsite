@@ -55,6 +55,11 @@
     transform: scale(1.5);
     cursor: pointer;
     color: $main-color;
+    @include tablet {
+      right: 0;
+      top: -1%;
+      transform: scale(1.3);
+    }
   }
   .modal-content {
     @include flex(space-between, flex-start);
