@@ -18,6 +18,8 @@ import tmovix2 from "../assets/tmovix2.png";
 import tmovix3 from "../assets/tmovix3.png";
 import tmovix4 from "../assets/tmovix4.png";
 import tmovix5 from "../assets/tmovix5.png";
+import tmovix6 from "../assets/tmovix6.png";
+import tmovix7 from "../assets/tmovix7.png";
 import portfolio from "../assets/portfolio.png";
 import portfolio1 from "../assets/portfolio1.png";
 import portfolio2 from "../assets/portfolio2.png";
@@ -37,13 +39,22 @@ import responsive from "../assets/responsive.png";
 export const works = [
   {
     id: 1,
-    img: [tmovix, tmovix1, tmovix2, tmovix3, tmovix4, tmovix5],
+    img: [
+      tmovix,
+      tmovix1,
+      tmovix2,
+      tmovix3,
+      tmovix4,
+      tmovix5,
+      tmovix6,
+      tmovix7,
+    ],
     name: "tMovix",
     overview:
-      "Đây là 1 website xem phim kèm với những tính năng như là tìm phim , xem trailer , phân trang . Mình build website này chủ yếu để xem xem phim nào đang trending để có thể rủ bạn bè cùng đi xem. Đây là dự án gần đây nhất của mình!",
+      "Đây là 1 website xem phim kèm với những tính năng như là tìm phim, xem phim ngắn và dài tập, phân trang, cách gọi api với axios. Mình build website này để xem phim engsub cải thiện thêm vốn từ vựng bản thân!",
     type: "Movie App",
     frontEnd: "React ,SCSS",
-    backEnd: "The Movie Database (TMDB)API",
+    backEnd: "The Movie Database (TMDB)API , 2embed",
     tags: ["react", "scss", "axios", "responsive", "api", "movie"],
     link: "https://tmovix.netlify.app/",
   },
@@ -52,7 +63,7 @@ export const works = [
     img: [lofi, lofi1, lofi2, lofi3, lofi4, lofi5],
     name: "Lofi.co",
     overview:
-      "Website này được mình lấy cảm hứng từ trang Lofi.co , mình đã tự tay clone lại nó với mục đích chủ yếu là để code ra những tình năng và dùng nó mà bên Lofi.co nếu muốn dùng sẽ mất phí. Và đây cũng là dự án React đầu tiên mình làm sau khi học xong khóa ReactJs trên F8.",
+      "Website này được mình lấy cảm hứng từ trang Lofi.co , mình đã tự tay clone lại website này với mục đích chủ yếu là để code ra những tình năng và dùng nó mà bên Lofi.co nếu muốn dùng sẽ mất phí. Và đây cũng là dự án React đầu tiên mình làm sau khi học xong khóa ReactJs trên F8.",
     type: "Lofi Chill",
     frontEnd: "React, SCSS",
     backEnd: "None",
@@ -73,7 +84,7 @@ export const works = [
     ],
     name: "Haruki",
     overview:
-      "Website này mình build ra chủ yếu để học thêm về React Redux,cách tạo giở hàng,cách thêm, bớt,sửa,xóa một sản phẩm trong giở hàng,cách design 1 website ecommerce . Đây là dự án thứ hai của mình chỉ sau dự án Lofi trước đó!!!",
+      "Website này mình build ra chủ yếu để học thêm về React Redux,cách tạo giở hàng,cách thêm, bớt,sửa,xóa một sản phẩm trong giở hàng,cách design 1 website ecommerce. Đây là dự án thứ hai của mình chỉ sau dự án Lofi web!!!",
     type: "Ecommerce",
     frontEnd: "React ,SCSS",
     backEnd: "None",
@@ -85,12 +96,12 @@ export const works = [
     img: [portfolio, portfolio1, portfolio2, portfolio3, portfolio4],
     name: "Tung's Portfolio",
     overview:
-      "Đây là website portfolio của mình , mình lấy cảm hứng từ themeforest và đã clone lại website này. Website này tổng hợp những dự án, kinh nghiệm và thông tin cá nhân của mình nếu bạn muốn thuê mình. Nếu bạn có gì thắc mắc thì cứ gửi tin nhắn qua phần contact mình sẽ phản hồi lại ngay khi có thể.",
+      "Đây là website portfolio của mình , mình lấy cảm hứng từ themeforest và đã clone lại website này. Website này tổng hợp những dự án, kinh nghiệm và thông tin cá nhân của mình và sẽ được update liên tục khi có thông tin mới!",
     type: "Portfolio",
     frontEnd: "SCSS ,React",
     backEnd: "None",
     tags: ["react", "scss", "portfolio", "responsive"],
-    link: "https://harukijp.netlify.app/",
+    link: "https://viettungportfolio.netlify.app/",
   },
 ];
 
