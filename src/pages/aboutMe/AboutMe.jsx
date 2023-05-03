@@ -50,24 +50,24 @@ const infoList = [
 
 const expList = [
   {
-    count: 1,
-    content: "Years of",
-    sub: "experience",
+    count: 8,
+    content: "Months of",
+    sub: "Learning",
   },
   {
-    count: 4,
+    count: 5,
     content: "Completed",
     sub: "Projects",
   },
   {
-    count: 1,
-    content: "Happy",
-    sub: "Customers",
+    count: 925,
+    content: "Toeic",
+    sub: "Score",
   },
   {
-    count: 1,
-    content: "Awards",
-    sub: "Won",
+    count: 0,
+    content: "Years of",
+    sub: "Experience",
   },
 ];
 
@@ -77,35 +77,42 @@ const educationList = [
     title: "Trần Hưng Đạo",
     subTitle: "Hight School",
     content:
-      "Sau khi tốt nghiệp cấp ba. Mình vẫn chưa hề có tí hứng thú nào với ngành IT mà dự định của mình là học ngành Marketing hoặc Logistics. Nhưng do mình đã không nỗ lực đủ trong việc ôn thi đại học do đó đã trượt hết tất cả nguyện vọng mình đăng ký với số điểm 23.5! ",
+      "Sau khi tốt nghiệp cấp ba bản thân mình nhận thấy vẫn còn rất mông lung với tương lai bản thân sau này và đặt rất ít nguyện vọng. Kết quả là mình đã trượt hết tất cả nguyện vọng đăng ký.",
   },
   {
     date: "2021 - 2022",
     title: "College of Technology and trading",
     subTitle: "College",
     content:
-      "Mình đăng ký vào trường hiện tại chủ yếu với dự định học cao đẳng rồi liên thông lên đại học sau và cũng vì học phí các trường cao đẳng rẻ hơn rất nhiều. Lúc đầu mình đăng ký ngành Logistics chứ không phải ngành IT nhưng khi mình được trải nghiệm thử lớp C++ và HTML&CSS mình cảm thấy ngành IT thú vị hơn nhiều với những dòng code và bài toán khó (dù mình không giỏi toán 1 chút nào :v).Mình quyết định đổi sang ngành IT từ đó.",
+      "Mình đăng ký vào trường hiện tại chủ yếu với dự định học cao đẳng rồi liên thông lên đại học và cũng vì học phí các trường cao đẳng rẻ hơn rất nhiều. Lúc đầu mình đăng ký ngành Logistics chứ không phải ngành IT nhưng khi mình được học thử lớp C++, HTML , CSS mình cảm thấy ngành IT có gì đó hợp hơn với mình. Sau đó mình quyết định xin chuyển sang ngành IT từ đó.",
   },
   {
     date: "2022/2/16",
     title: "Quan Truong Minh Teacher",
     subTitle: "Toeic Course",
     content:
-      "Trong quãng thời gian năm nhất mình nhận thấy tiếng anh thật sự rất quan trọng với ngành học của mình lên đã không ngần ngại đăng ký một lớp toeic để thi lấy chứng chỉ. Trong thời gian ôn luyện mình đã làm 7 quyển để từ dễ đến khó và cuối cùng đã đạt được điểm số 925 Toeic!!!",
+      "Trong quãng thời gian năm nhất mình nhận thấy tiếng anh thật sự rất quan trọng với ngành học của mình lên đã không ngần ngại đăng ký một lớp toeic để thi lấy chứng chỉ. Trong thời gian ôn luyện mình đã làm hơn 12 quyển để từ dễ đến khó và cuối cùng đã đạt được điểm số 925 Toeic!!!",
   },
   {
-    date: "2022/8/12",
-    title: "F8 Website",
-    subTitle: "Learning React Course",
+    date: "2022/7/12",
+    title: "Web Dev Learning",
+    subTitle: "Learning Course",
     content:
-      "Mình học HTML, CSS , JavaScript trên Udemy và khi đã thấy ổn với những gì mình có thì mình biết đến F8 của anh Sơn. Mình đăng ký lớp ReactJs và JavaScript nâng cao để củng cố kiến thức đã có.Nhờ công anh Sơn mà mình có đủ kiến thức về React để build một website như thế này !",
+      "Sau khi tìm hiểu sơ qua về ngành mình quyết định theo hướng FE Developer , một phần vì thấy thú vị và cũng có đầy đủ roadmap tài liệu để theo học. Mình bắt đầu từ khóa The Complete JavaScript Course 2023: From Zero to Expert! của thầy Jonas trên udemy , lúc đó do chưa tìm hiểu kỹ lên mình nhảy học thẳng JS mà bỏ qua HTML,CSS",
   },
   {
     date: "2022/10/2",
-    title: "Making Website with React",
-    subTitle: "Practicing",
+    title: "Learning ReactJS",
+    subTitle: "React Js",
     content:
-      "2 tháng đổ lại đây mình tập trung thực hành xây dựng React app với những gì mình học được. Tuy những dự án React đầu tay của mình vẫn còn vô số lỗi lủng cũng trong cấu trúc nhưng mình đang trên đà sửa và khắc phục nó. Tương lai tới mình dự định học thêm về Database và TypeScript chỉ sau dự án Portfolio này.",
+      "Sau khi đã nắm được cơ bản của JavaScript mình quyết định học lên JavaScript nâng cao kèm theo đó là học về ReactJs qua khóa của anh Sơn Đặng F8",
+  },
+  {
+    date: "2023/2/15",
+    title: "Learning NodeJs , Express and MongoDB",
+    subTitle: "Basic BackEnd",
+    content:
+      "Sau đợt tết mình quyết định học thêm cơ bản về BackEnd để có thể hiểu rõ hơn cách API hoạt động và cũng như là muốn tạo cho mình một MERN App. Mình đã học qua Node JS , Express , MongoDB qua khóa The Web Developer Bootcamp của thầy Colt Steel cũng như kết hợp làm project để học thêm về cách BackEnd Hoạt Động",
   },
 ];
 

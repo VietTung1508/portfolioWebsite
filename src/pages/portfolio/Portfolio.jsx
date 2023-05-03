@@ -6,6 +6,8 @@ import { works } from "../../data";
 
 import { useState } from "react";
 import Modal from "../../components/modal/Modal";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 function Portfolio() {
   const [sort, setSort] = useState("All");
@@ -90,6 +92,11 @@ function Portfolio() {
             <img src={noProject} alt="" />
           </div>
         )}
+        {/* <div className="upload_projects">
+          <div>
+            <FontAwesomeIcon icon={faPlus} className="icon-upload" />
+          </div>
+        </div> */}
       </div>
       {items.map((el, i) => (
         <Modal key={i} active={false} item={el} id={`modal_${el.id}`} />

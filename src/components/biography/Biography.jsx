@@ -31,13 +31,12 @@ function Biography() {
                 <span>WEB DEVELOPER !</span>
               </h1>
               <p>
-                Hello mọi người mình là Tùng. Hiện đang là một sinh viên năm thứ
-                hai tại một trường cao đẳng ở Hà Nội. Cũng như bao anh em khác
-                mình tình cờ biết đến cộng đồng F8 của anh Sơn Đặng qua
-                Facebook. Mình đã hoàn thành khóa ReactJs, JavaScript của anh
-                Sơn và đã có làm qua một số dự án cá nhân lớn nhỏ. Thật sự mình
-                rất biết ơn đến anh Sơn và cộng đồng F8 đã giúp mình có động lực
-                theo đuổi ngành học khó nhằn này !!!
+                Xin chào mọi người mình tên là Tùng. Hiện đang là sinh viên của
+                trường Cao đẳng công nghệ và thương mại Hà Nội.Mình đã hoàn
+                thành được các khóa học online như The Complete JavaScript
+                Course 2023: From Zero to Expert! của thầy Jonas , ReactJs của
+                anh Sơn Đặng , The Web Developer Bootcamp của thầy Colt Steele
+                trên Udemy và một vài khóa crash course trên youtube.
               </p>
               <div className="btns">
                 <Button path="/portfolio" icon={faArrowRight}>

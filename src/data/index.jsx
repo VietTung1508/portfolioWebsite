@@ -25,16 +25,24 @@ import portfolio1 from "../assets/portfolio1.png";
 import portfolio2 from "../assets/portfolio2.png";
 import portfolio3 from "../assets/portfolio3.png";
 import portfolio4 from "../assets/portfolio4.png";
+import memories from "../assets/memories.png";
+import memories1 from "../assets/memories1.png";
+import memories2 from "../assets/memories2.png";
+import memories3 from "../assets/memories3.png";
+import memories4 from "../assets/memories4.png";
+import memories5 from "../assets/memories5.png";
 import html from "../assets/html.png";
 import sass from "../assets/sass.png";
 import redux from "../assets/redux.png";
 import react from "../assets/react.png";
 import css from "../assets/css.png";
 import js from "../assets/js.png";
-import git from "../assets/git.png";
 import axios from "../assets/axios.png";
 import github from "../assets/github.png";
 import responsive from "../assets/responsive.png";
+import nodejs from "../assets/nodejs.png";
+import express from "../assets/express.png";
+import mongoDB from "../assets/mongoDB.png";
 
 export const works = [
   {
@@ -51,7 +59,7 @@ export const works = [
     ],
     name: "tMovix",
     overview:
-      "Đây là 1 website xem phim kèm với những tính năng như là tìm phim, xem phim ngắn và dài tập, phân trang, cách gọi api với axios. Mình build website này để xem phim engsub cải thiện thêm vốn từ vựng bản thân!",
+      "Đây là 1 website xem phim kèm với những tính năng như là tìm phim, xem phim ngắn và dài tập, phân trang, cách gọi api với axios. Mình build website này để học thêm cách gọi api và cách dùng axios",
     type: "Movie App",
     frontEnd: "React ,SCSS",
     backEnd: "The Movie Database (TMDB)API , 2embed",
@@ -63,7 +71,7 @@ export const works = [
     img: [lofi, lofi1, lofi2, lofi3, lofi4, lofi5],
     name: "Lofi.co",
     overview:
-      "Website này được mình lấy cảm hứng từ trang Lofi.co , mình đã tự tay clone lại website này với mục đích chủ yếu là để code ra những tình năng và dùng nó mà bên Lofi.co nếu muốn dùng sẽ mất phí. Và đây cũng là dự án React đầu tiên mình làm sau khi học xong khóa ReactJs trên F8.",
+      "Website này được mình lấy cảm hứng từ trang Lofi.co , mình đã tự tay clone lại website này với với mục đích ban đầu là để cho vui và mình cũng đã học được nhiều về Sass qua dự án này.",
     type: "Lofi Chill",
     frontEnd: "React, SCSS",
     backEnd: "None",
@@ -84,7 +92,7 @@ export const works = [
     ],
     name: "Haruki",
     overview:
-      "Website này mình build ra chủ yếu để học thêm về React Redux,cách tạo giở hàng,cách thêm, bớt,sửa,xóa một sản phẩm trong giở hàng,cách design 1 website ecommerce. Đây là dự án thứ hai của mình chỉ sau dự án Lofi web!!!",
+      "Website này mình build ra chủ yếu để học thêm về React Redux,cách tạo giở hàng,cách thêm, bớt,sửa,xóa một sản phẩm trong giở hàng,cách design 1 website ecommerce.",
     type: "Ecommerce",
     frontEnd: "React ,SCSS",
     backEnd: "None",
@@ -102,6 +110,26 @@ export const works = [
     backEnd: "None",
     tags: ["react", "scss", "portfolio", "responsive"],
     link: "https://viettungportfolio.netlify.app/",
+  },
+  {
+    id: 5,
+    img: [memories, memories1, memories2, memories3, memories4, memories5],
+    name: "Memories",
+    overview:
+      "Đây là dự án mình lấy cảm hứng từ pinterest và cũng có thể nói đây là dự án lớn nhất từ trước tới giờ của mình. Api của dự án này được mình viết thông quá express và được lưu ở mongodb Atlas. Website này bao gồm các tính năng CRUD, đăng nhập, đăng ký , quên mật khẩu, OTP , ủy quyền , xác thực, tìm kiếm , bình luận, thích ...",
+    type: "Social App",
+    frontEnd: "SCSS ,React",
+    backEnd: "Express , MongoDB, NodeJs",
+    tags: [
+      "react",
+      "scss",
+      "nodejs",
+      "express",
+      "mongodb",
+      "social",
+      "responsive",
+    ],
+    link: "https://memories1508.netlify.app/",
   },
 ];
 
@@ -146,14 +174,25 @@ export const skills = [
     img: github,
     name: "git hub",
   },
+
   {
-    id: 8,
-    img: git,
-    name: "git",
-  },
-  {
-    id: 8,
+    id: 10,
     img: responsive,
     name: "responsive",
+  },
+  {
+    id: 11,
+    img: nodejs,
+    name: "Node js",
+  },
+  {
+    id: 12,
+    img: express,
+    name: "Express",
+  },
+  {
+    id: 13,
+    img: mongoDB,
+    name: "Mongo db",
   },
 ];
