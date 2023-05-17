@@ -129,7 +129,7 @@ export const works = [
       "social",
       "responsive",
     ],
-    link: "https://memories1508.netlify.app/",
+    link: "https://memories1508.vercel.app/",
   },
 ];
 
