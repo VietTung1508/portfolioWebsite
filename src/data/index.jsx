@@ -31,6 +31,24 @@ import memories2 from "../assets/memories2.png";
 import memories3 from "../assets/memories3.png";
 import memories4 from "../assets/memories4.png";
 import memories5 from "../assets/memories5.png";
+import book1 from "../assets/book1.PNG";
+import book2 from "../assets/book2.PNG";
+import book3 from "../assets/book3.PNG";
+import book4 from "../assets/book4.PNG";
+import book5 from "../assets/book5.PNG";
+import book6 from "../assets/book6.PNG";
+import book7 from "../assets/book7.PNG";
+import book8 from "../assets/book8.PNG";
+import book9 from "../assets/book9.PNG";
+import book10 from "../assets/book10.PNG";
+import book11 from "../assets/book11.PNG";
+import book12 from "../assets/book12.PNG";
+import book13 from "../assets/book13.PNG";
+import book14 from "../assets/book14.PNG";
+import book15 from "../assets/book15.PNG";
+import book16 from "../assets/book16.PNG";
+import book17 from "../assets/book17.PNG";
+import book18 from "../assets/book18.PNG";
 import html from "../assets/html.png";
 import sass from "../assets/sass.png";
 import redux from "../assets/redux.png";
@@ -129,7 +147,38 @@ export const works = [
       "social",
       "responsive",
     ],
-    link: "https://memories1508.netlify.app/",
+    link: "https://memories1508.vercel.app/",
+  },
+  {
+    id: 6,
+    img: [
+      book1,
+      book2,
+      book3,
+      book4,
+      book5,
+      book6,
+      book7,
+      book8,
+      book9,
+      book10,
+      book11,
+      book12,
+      book13,
+      book14,
+      book15,
+      book16,
+      book17,
+      book18,
+    ],
+    name: "Viz Media",
+    overview:
+      "Đây là dự án bán sách mình xây dựng với công nghệ mới là NextJs tuy dự án vẫn chưa được chuẩn hóa sale nhưng về cơ bản thì website này có xác thực giữa admin và người dùng , có thể đặt hàng, duyệt hàng vầ thêm các sản phẩm qua admin dashboard",
+    type: "Ecommerce",
+    frontEnd: "ReactJS, Tailwind Css, Sass, Mui",
+    backEnd: "API Route in NextJS",
+    tags: ["react", "scss", "next", "mongodb", "ecommerce"],
+    link: "https://vizmedia.vercel.app/",
   },
 ];
 
